@@ -1,0 +1,3 @@
+CREATE DATABASE items;
+CREATE USER itemsuser WITH PASSWORD 'items';
+GRANT ALL PRIVILEGES ON DATABASE items TO itemsuser;
