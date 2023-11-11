@@ -143,7 +143,7 @@ REST_FRAMEWORK = {
         # What we'll use for the browseable API
         'rest_framework.authentication.SessionAuthentication',
         # Basic Authentication should be removed in production
-        'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
     ],
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.

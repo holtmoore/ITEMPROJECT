@@ -20,4 +20,15 @@ class UserSerializer(serializers.ModelSerializer):
         user = models.User.objects.create_user(**validated_data)
         return user
     
+    def update(self, instance, validated_data):
+        instance.email = validated_data.get('email', instance.email)
+        instance.save()
+        return instance
+    
+    def delete(self, instance):
+        instance.delete()
+        return instance
+    
+
+    
  
